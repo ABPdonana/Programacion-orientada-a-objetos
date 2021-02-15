@@ -6,7 +6,9 @@ class Cliente:
 
     def dni(self):
         return self.__dni
+
     def nombre(self):
         return self.__nombre
+
     def apellidos(self):
         return self.__apellidos
