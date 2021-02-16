@@ -7,10 +7,9 @@ class Cuenta:
         self.__movimientos = []
         self.__saldo = saldo
 
-    def set_movimientos(self, movimiento):
-        self.__movimiento = Movimiento(movimiento)
-        self.__movimientos.append([self.__movimiento.concepto, self.__movimiento.cantidad])
-        __set_saldo(self.__movimento.cantidad)
+    def anyadir_movimientos(self, movimiento):
+        self.__movimientos.append(Movimiento(movimiento))
+        self.__set_saldo(self.movimiento.cantidad())
 
     def movimientos(self):
         return self.__movimientos
