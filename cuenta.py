@@ -22,6 +22,9 @@ class Cuenta:
     def __set_saldo(self, cantidad):
         self.__saldo += cantidad
 
+    def saldo(self):
+        return self.__saldo
+
     def numero(self):
         return self.__numero
 
