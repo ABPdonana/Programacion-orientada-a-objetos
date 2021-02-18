@@ -13,8 +13,8 @@ class Cuenta:
         self.__saldo = saldo
 
     def anyadir_movimientos(self, movimiento):
-        self.__movimientos.append(Movimiento(movimiento))
-        self.__set_saldo(self.movimiento.cantidad())
+        self.__movimientos.append(movimiento)
+        self.__set_saldo(movimiento.cantidad())
 
     def movimientos(self):
         return self.__movimientos
