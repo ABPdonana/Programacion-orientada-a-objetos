@@ -35,4 +35,4 @@ class Cuenta:
 
     @staticmethod
     def get_cuenta(numero):
-        return Cuenta.__cuentas(numero)
+        return Cuenta.__cuentas.get(numero)
